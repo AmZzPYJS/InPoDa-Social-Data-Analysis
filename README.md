@@ -11,6 +11,15 @@ Le projet simule une architecture simplifiée de pipeline data :
     4.    Analyse statistique
     5.    Visualisation des résultats
 
+
+⸻
+
+## 🚀 Comment éxecuter le projet
+    1. Cloner le repository
+    2. Installer les dépendances : pip install textblob pandas matplotlib
+    3. Ouvrir le notebook InPoDaMainFiles.ipyn
+    4. Executer toutes les cellules
+
 ⸻
 
 ## 🏗 Architecture générale
