@@ -1,4 +1,4 @@
-📌 Contexte du projet
+## 📌 Contexte du projet
 
 Ce projet a été réalisé dans le cadre du TD 11–12 (LSIN304) à l’Université de Versailles Saint-Quentin-en-Yvelines.
 
@@ -13,7 +13,7 @@ Le projet simule une architecture simplifiée de pipeline data :
 
 ⸻
 
-🏗 Architecture générale
+## 🏗 Architecture générale
 
 Le système fonctionne selon les étapes suivantes :
     •    Lecture d’un fichier JSON contenant des publications
@@ -26,7 +26,7 @@ Le système fonctionne selon les étapes suivantes :
 
 ⸻
 
-🧱 Modélisation des données
+## 🧱 Modélisation des données
 
 Chaque tweet est représenté sous forme de dictionnaire structuré :
 
@@ -45,16 +45,16 @@ La modélisation a été adaptée pour faciliter les opérations analytiques dem
 
 ⸻
 
-⚙️ Fonctionnalités implémentées
+## ⚙️ Fonctionnalités implémentées
 
-🔍 Traitement des données
+## 🔍 Traitement des données
     •    Identification de l’auteur
     •    Extraction des hashtags
     •    Extraction des utilisateurs mentionnés
     •    Analyse de sentiment (TextBlob)
     •    Identification des topics
 
-📈 Analyse des données
+## 📈 Analyse des données
     •    Top K hashtags
     •    Top K utilisateurs
     •    Top K utilisateurs mentionnés
@@ -67,7 +67,7 @@ La modélisation a été adaptée pour faciliter les opérations analytiques dem
 
 ⸻
 
-🧪 Technologies utilisées
+## 🧪 Technologies utilisées
     •    Python
     •    Programmation Orientée Objet (POO)
     •    Expressions régulières (re)
@@ -78,7 +78,7 @@ La modélisation a été adaptée pour faciliter les opérations analytiques dem
 
 ⸻
 
-📊 Visualisation
+## 📊 Visualisation
 
 Les résultats analytiques sont représentés graphiquement à l’aide de matplotlib, permettant :
     •    Visualisation des Top K
@@ -87,7 +87,7 @@ Les résultats analytiques sont représentés graphiquement à l’aide de matpl
 
 ⸻
 
-🎓 Objectifs pédagogiques
+## 🎓 Objectifs pédagogiques
     •    Compréhension d’un pipeline de traitement de données
     •    Manipulation de données JSON
     •    Structuration via POO
@@ -97,9 +97,11 @@ Les résultats analytiques sont représentés graphiquement à l’aide de matpl
 
 ⸻
 
-🚀 Perspectives d’amélioration
+## 🚀 Perspectives d’amélioration
     •    Intégration d’un stockage base de données
     •    API REST pour déclencher les traitements
     •    Automatisation du pipeline
     •    Déploiement cloud
     •    Analyse NLP plus avancée
+
+⸻
