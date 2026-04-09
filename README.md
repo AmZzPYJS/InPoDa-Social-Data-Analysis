@@ -1,116 +1,61 @@
-## 📌 Contexte du projet
+# 📊 InPoDa — Social Data Analysis Pipeline
 
-Ce projet a été réalisé dans le cadre du TD 11–12 (LSIN304) à l’Université de Versailles Saint-Quentin-en-Yvelines.
+A simulated social media data pipeline that generates, processes, and visualizes user interaction data. Includes **sentiment analysis** with TextBlob and data visualization with Matplotlib.
 
-L’objectif était de concevoir une plateforme fictive nommée InPoDa, dédiée à la collecte, au traitement et à l’analyse de données issues des réseaux sociaux (tweets au format JSON).
+> Academic project — Data Analysis module, L3 Computer Science @ UVSQ
 
-Le projet simule une architecture simplifiée de pipeline data :
-    1.    Collecte des publications
-    2.    Nettoyage et validation des données
-    3.    Traitement et enrichissement
-    4.    Analyse statistique
-    5.    Visualisation des résultats
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
+---
 
-⸻
+## Features
 
-## 🚀 Comment éxecuter le projet
-    1. Cloner le repository
-    2. Installer les dépendances : pip install textblob pandas matplotlib
-    3. Ouvrir le notebook InPoDaMainFiles.ipyn
-    4. Executer toutes les cellules
+- Simulated social network data generation (users, posts, comments, likes)
+- Object-oriented pipeline architecture (OOP)
+- Sentiment analysis on text content using TextBlob (polarity and subjectivity scoring)
+- Data cleaning and transformation with Pandas
+- Statistical visualizations: engagement metrics, sentiment distribution, activity trends
+- Jupyter Notebook for interactive exploration
 
-⸻
-
-## 🏗 Architecture générale
-
-Le système fonctionne selon les étapes suivantes :
-    •    Lecture d’un fichier JSON contenant des publications
-    •    Validation et nettoyage des données (expressions régulières)
-    •    Modélisation des tweets sous forme de dictionnaires Python
-    •    Encapsulation des traitements via la programmation orientée objet
-    •    Stockage intermédiaire dans une “zone d’atterrissage”
-    •    Enrichissement des données (sentiment, topics, hashtags…)
-    •    Chargement dans une structure type DataFrame pour analyse
-
-⸻
-
-## 🧱 Modélisation des données
-
-Chaque tweet est représenté sous forme de dictionnaire structuré :
+## Pipeline overview
 
 ```
-{
-    "auteur": "...",
-    "contenu": "...",
-    "hashtags": [...],
-    "mentions": [...],
-    "sentiment": "...",
-    "topics": [...]
-}
+Data Generation → Cleaning & Transformation → Sentiment Analysis → Visualization
+     (OOP)            (Pandas)                  (TextBlob)         (Matplotlib)
 ```
 
-La modélisation a été adaptée pour faciliter les opérations analytiques demandées.
+## Tech stack
 
-⸻
+| Component | Technology |
+|-----------|-----------|
+| Language | Python |
+| Data processing | Pandas |
+| NLP | TextBlob |
+| Visualization | Matplotlib |
+| Notebook | Jupyter |
+| Paradigm | Object-Oriented Programming |
 
-## ⚙️ Fonctionnalités implémentées
+## Getting started
 
-## 🔍 Traitement des données
-    •    Identification de l’auteur
-    •    Extraction des hashtags
-    •    Extraction des utilisateurs mentionnés
-    •    Analyse de sentiment (TextBlob)
-    •    Identification des topics
+```bash
+git clone https://github.com/AmZzPYJS/InPoDa-Social-Data-Analysis.git
+cd InPoDa-Social-Data-Analysis
+pip install -r requirements.txt
+jupyter notebook
+```
 
-## 📈 Analyse des données
-    •    Top K hashtags
-    •    Top K utilisateurs
-    •    Top K utilisateurs mentionnés
-    •    Top K topics
-    •    Nombre de publications par utilisateur
-    •    Nombre de publications par hashtag
-    •    Nombre de publications par topic
-    •    Tweets d’un utilisateur spécifique
-    •    Tweets mentionnant un utilisateur spécifique
+## What I learned
 
-⸻
+- Designing a data pipeline from generation to visualization
+- Applying OOP principles to structure a data project (classes for Users, Posts, Interactions)
+- Using TextBlob for basic NLP tasks (sentiment polarity, subjectivity)
+- Creating meaningful visualizations that tell a story from raw data
+- Working with Jupyter Notebooks for exploratory data analysis
 
-## 🧪 Technologies utilisées
-    •    Python
-    •    Programmation Orientée Objet (POO)
-    •    Expressions régulières (re)
-    •    TextBlob (analyse de sentiment)
-    •    Matplotlib (visualisation)
-    •    Pandas (analyse tabulaire si utilisé)
-    •    Jupyter Notebook
+## License
 
-⸻
-
-## 📊 Visualisation
-
-Les résultats analytiques sont représentés graphiquement à l’aide de matplotlib, permettant :
-    •    Visualisation des Top K
-    •    Histogrammes de fréquence
-    •    Répartition des sentiments
-
-⸻
-
-## 🎓 Objectifs pédagogiques
-    •    Compréhension d’un pipeline de traitement de données
-    •    Manipulation de données JSON
-    •    Structuration via POO
-    •    Nettoyage via regex
-    •    Analyse statistique
-    •    Visualisation de données
-
-⸻
-
-## 🚀 Perspectives d’amélioration
-    •    Intégration d’un stockage base de données
-    •    API REST pour déclencher les traitements
-    •    Automatisation du pipeline
-    •    Déploiement cloud
-    •    Analyse NLP plus avancée
-
-⸻
+MIT
